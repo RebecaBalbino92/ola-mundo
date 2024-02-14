@@ -6,7 +6,7 @@ const InicioPage = () => {
   return (
     <div className="container">
     <div className="profile">
-      <img className="profile-picture" src="public/IMG_20230920_150127892copia.jpg" alt="Imagem do Perfil" />
+      <img className="profile-picture" src="IMG_20230920_150127892copia.jpg" alt="Imagem do Perfil" />
       <h2>Rebeca Balbino</h2>
       <p> Olá conexões! Que bom tê-lx aqui! 🤗 <br />
 
