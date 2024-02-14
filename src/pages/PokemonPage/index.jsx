@@ -15,7 +15,6 @@ const PokemonPage = () => {
         "https://pokeapi.co/api/v2/pokemon?limit=100"
       );
       setReferenciasPokemons(resposta.data.results);
-      setIsLoading(false); // Define isLoading como false após buscar os dados
     } catch (error) {
       console.error("Erro ao buscar as referencias dos pokemons", error);
     }
@@ -26,6 +25,7 @@ const PokemonPage = () => {
   }, []);
 
   const pegarListaDePokemons = async () => {
+    setIsLoading(true);
     const listaTemporaria = [];
 
     for (const referencia of referenciasPokemons) {
@@ -38,6 +38,7 @@ const PokemonPage = () => {
     }
 
     setListaPokemons(listaTemporaria);
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -46,8 +47,6 @@ const PokemonPage = () => {
 
   return (
     <div className="pokemon-container">
-      {isLoading && <LinearProgress className="linear-progress" />} {/* Renderiza o componente LinearProgress se isLoading for true */}
-
       {listaPokemons.map((pokemon) => (
         <CardPokemon
           key={pokemon.id} // Adicione uma chave única para cada CardPokemon
@@ -57,6 +56,8 @@ const PokemonPage = () => {
           url={pokemon.forms[0].url}
         />
       ))}
+      {isLoading && <LinearProgress className="linear-progress" />}{" "}
+      {/* Renderiza o componente LinearProgress se isLoading for true */}
     </div>
   );
 };

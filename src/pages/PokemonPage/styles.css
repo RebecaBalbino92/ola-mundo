@@ -7,15 +7,17 @@
   }
 
   .linear-progress {
-    width: 100%; /* Define a largura do progresso */
+    width: 100%; 
+    margin-top: 50px;
+    
   }
   
   .linear-progress .MuiLinearProgress-bar {
-    background-color: #2196f3; /* Define a cor de fundo da barra de progresso */
+    background-color: #2196f3; 
   }
   
   .linear-progress .MuiLinearProgress-barColorPrimary {
-    background-color: #2196f3; /* Define a cor da barra de progresso */
+    background-color: #2196f3; 
   }
   
   
