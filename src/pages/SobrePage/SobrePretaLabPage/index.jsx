@@ -8,7 +8,7 @@ import { Grid } from '@mui/material';
 
 const SobrePretaLabPage = () => {
     return (
-        <Grid container spacing={2}> 
+        <Grid container spacing={2} marginTop="40px"> 
             <Grid item xs={12} sm={6}> 
                 <Card >
                     <CardActionArea>
