@@ -1,0 +1,23 @@
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .linear-progress {
+    width: 100%; /* Define a largura do progresso */
+  }
+  
+  .linear-progress .MuiLinearProgress-bar {
+    background-color: #2196f3; /* Define a cor de fundo da barra de progresso */
+  }
+  
+  .linear-progress .MuiLinearProgress-barColorPrimary {
+    background-color: #2196f3; /* Define a cor da barra de progresso */
+  }
+  
+  
+
+

@@ -1,0 +1,4 @@
+.pokemon-item {
+    text-align: center;
+    width: calc(18% - 5px);
+  }
